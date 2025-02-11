@@ -1,0 +1,45 @@
+
+@font-face {
+  font-family: font;
+  src: url(Pinksoda.otf);
+}
+
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 40px 20px 20px;
+  text-align: center;
+  height: 70px;
+}
+
+.top {
+  height: 60px;
+}
+
+.middle {
+  padding-top: 20px;
+  height: 18px
+}
+
+.name {
+  font-size: 40px;
+  margin: 0 0 0 0;
+  padding-top: 13px;
+  font-weight: bold;
+}
+
+.location {
+  margin: 0 0 0 0;
+}
+
+.bottom {
+  height: 18px;
+  padding-top: 10px;
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
