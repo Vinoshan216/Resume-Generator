@@ -1,0 +1,41 @@
+
+.main {
+  margin: 0px 40px 0px 40px;
+}
+
+.summary, .education {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  height: auto;
+}
+
+.job-container {
+  padding-top: 10px;
+}
+
+.position {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 100px;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.position-details {
+  text-align: right;
+}
+
+.position-name {
+  font-style: italic;
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+.explanationPoints {
+  padding-left: 20px;
+  padding-bottom: 1px;
+}

@@ -47,14 +47,3 @@ body {
 .email, .phone, .linkedin, .github {
   margin: 0 0 0 0;
 }
-
-.main {
-  margin: 0px 40px 0px 40px;
-}
-
-.summary {
-  font-size: 20px;
-  font-weight: bold;
-  border-bottom: 2px solid black;
-  height: auto;
-}
