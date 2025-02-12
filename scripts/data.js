@@ -1,0 +1,3 @@
+
+export const summary_data = "A dynamic and analytical professional with a double degree in Business Administration and Computer Science, specializing in data analysis, business intelligence, and IT systems administration. Adept at transforming large datasets into actionable insights using Python, Power BI, and Excel, with experience optimizing business processes across marketing, IT, and education sectors. Proven ability to enhance data visualization, automate workflows, and provide technical support to drive efficiency and informed decision-making. Passionate about leveraging data-driven solutions to solve complex business challenges"
+
