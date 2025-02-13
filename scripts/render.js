@@ -1,8 +1,9 @@
-import {summary_data, educations} from "./data.js"
+import {summary, educations, jobs, ecs, skills} from "./data.js"
 import { renderList } from "./functions.js";
 
-let html = '';
-html = summary_data
-document.querySelector(`.js-summary-text`).innerHTML = html;
 
+renderList(summary, "summary-text")
 renderList(educations, "education-text")
+renderList(jobs, "experience-text")
+renderList(skills, "skills-text")
+renderList(ecs, "activities-text")

@@ -3,7 +3,7 @@
   margin: 0px 40px 0px 40px;
 }
 
-.summary, .education {
+.summary, .education, .experience, .activities, .skills {
   padding-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -11,8 +11,8 @@
   height: auto;
 }
 
-.job-container {
-  padding-top: 10px;
+.container {
+  padding-top: 5px;
 }
 
 .position {
@@ -27,15 +27,27 @@
   text-align: right;
 }
 
-.position-name {
+.company-name {
   font-style: italic;
 }
 
-.company-name {
+.position-name, .skill-type {
   font-weight: bold;
+}
+
+
+.skill-list {
+  flex: 1;
 }
 
 .explanationPoints {
   padding-left: 20px;
   padding-bottom: 1px;
+}
+
+.skills-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }

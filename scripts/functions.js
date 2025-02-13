@@ -28,30 +28,58 @@ export function formatPoints (object) {
 export function renderList (object, sectionTitle) {
   let jobHTML = '';
 
-
-
   object.forEach((element) => 
-  {
+  { 
+    jobHTML += checkSection(element, sectionTitle)
+      
+  });
+
+  document.querySelector(`.js-${sectionTitle}`).innerHTML = jobHTML;
+}
+
+
+function checkSection (element,sectionTitle) {
+
+  let html = "";
+
+  if (sectionTitle == "skills-text") {
+    html = 
+    ` 
+      <div class = "container">
+        <div class = "skills-container">
+            <div class = "skill-type">
+              ${element.type}: 
+            </div>
+            <div class = "skill-list">
+              ${element.list}
+            </div>
+            
+        </div>
+      </div>
+    `
+  }
+
+  else if (sectionTitle == "summary-text") {
+    html = element
+  }
   
+  else {
     const expHTML = formatPoints(element);
- 
 
-    jobHTML += 
-      `
-        <div class="job-container">
-
-
+    html = 
+    `
+        <div class="container">
           <div class = "position">
             <div class="position-info">
-
-              <div class="company-name">
-                  ${element.company_name}
-              </div> 
 
               <div class="position-name">
                   ${element.position_name}
               </div>
-                        
+
+              <div class="company-name">
+                  ${element.company_name}
+              </div> 
+           
             </div>
 
             <div class="position-details">
@@ -69,7 +97,7 @@ export function renderList (object, sectionTitle) {
 
         </div>
       `;
-  });
+  }
 
-  document.querySelector(`.js-${sectionTitle}`).innerHTML = jobHTML;
+  return html
 }
