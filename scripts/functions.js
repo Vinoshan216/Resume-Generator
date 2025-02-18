@@ -42,20 +42,17 @@ function checkSection (element,sectionTitle) {
 
   let html = "";
 
-  if (sectionTitle == "skills-text") {
+  if (sectionTitle == "skills-text" || sectionTitle =="projects-text") {
     html = 
     ` 
-      <div class = "container">
-        <div class = "skills-container">
-            <div class = "skill-type">
-              ${element.type}: 
+        <div class = "container">
+            <div class = "type">
+              ${element.type} 
             </div>
-            <div class = "skill-list">
-              ${element.list}
+            <div class = "list">
+              &bull; ${element.list}
             </div>
-            
         </div>
-      </div>
     `
   }
 

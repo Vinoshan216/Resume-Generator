@@ -141,3 +141,14 @@ export const skills = [
     list: "Quick Learning, Problem Solving, Work Ethic, Adaptable, Attention to Detail, Critical Thinking, Collaboration"
   }
 ];
+
+export const projects = [
+  {
+    type: "NBA-Predictor",
+    list: "A Python program that uses BeautifulSoup and Selenium to collect data on all statistics related to NBA players and awards from 1991-2024, and uses pandas to generate data frames that are fed into a machine learning model to make predictions on who will win an award for a given NBA season"
+  },
+  {
+    type: "Resume Generator",
+    list: "A Javascript program that allows the user to generate an ATS-friendly resume using a current resume or raw text input for sections they would like includede. The user can then save the resume in either .doc or .pdf file formats. The generated resume will appear on an HTML file and is style using CSS."
+  }
+]

@@ -1,9 +1,10 @@
 
 .main {
+  font-family: Arial;
   margin: 0px 40px 0px 40px;
 }
 
-.summary, .education, .experience, .activities, .skills {
+.summary, .education, .experience, .activities, .skills, .projects {
   padding-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -31,23 +32,15 @@
   font-style: italic;
 }
 
-.position-name, .skill-type {
+.position-name, .type {
   font-weight: bold;
 }
 
-
-.skill-list {
-  flex: 1;
-}
-
-.explanationPoints {
+.explanationPoints, .list {
   padding-left: 20px;
   padding-bottom: 1px;
 }
 
-.skills-container {
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.list {
+  padding-top: 5px;
 }
